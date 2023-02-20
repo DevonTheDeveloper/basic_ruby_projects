@@ -12,7 +12,6 @@ def stock_picker(prices)
     if price < min_price
       min_price = price
       first_day = index
-      next
     end
     if price - min_price > profit
       # calculate the profit
@@ -20,7 +19,7 @@ def stock_picker(prices)
       days = [first_day, index]
     end
   end
-  
+
   p days
   return days
 end
