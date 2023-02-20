@@ -5,6 +5,13 @@ def bubble_sort(array)
   until sorted
     sorted = true
     # compare every pair
+    (array.length - 1).times do |i|
+      if array[i] > array[i + 1]
+        # swap positions
+        array [i], array[i + 1] = array[i + 1], array[i]
+        sorted = false
+      end
+    end
   end
   # return results
   p array
