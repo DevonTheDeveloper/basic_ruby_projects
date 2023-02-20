@@ -7,6 +7,7 @@ def substrings(str, dictionary)
   dictionary.each do |word|
   # count amount of matches
     matches = str.scan(word).count
+    result[word] = matches unless matches == 0
   end
 
   return result
