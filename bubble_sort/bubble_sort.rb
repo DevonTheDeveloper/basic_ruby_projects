@@ -2,8 +2,10 @@ def bubble_sort(array)
   # declare variable if the array is sorted
   sorted = false
   # create a loop
-  # compare every pair
-
+  until sorted
+    sorted = true
+    # compare every pair
+  end
   # return results
   p array
   array
